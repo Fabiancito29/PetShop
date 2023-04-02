@@ -10,8 +10,24 @@
 		<h1 class="mt-4">Formulario de registro</h1>
 		<form action="registro.php" method="post">
 			<div class="form-group">
+				<label for="rut">Rut:</label>
+				<input type="rut" id="rut" name="rut" required>
+
 				<label for="nombre">Nombre:</label>
 				<input type="text" class="form-control" id="nombre" name="nombre" required>
+				
+				<label for="apellido">Apellido:</label>
+				<input type="text" id="apellido" name="apellido" required>
+			
+				<label for="email">Correo electrónico:</label>
+				<input type="email" id="email" name="email" required>
+			
+				<label for="password">Contraseña:</label>
+				<input type="password" id="password" name="password" required>
+
+				<label for="confirm-password">Repetir Contraseña:</label>
+				<input type="password" id="confirm-password" name="confirm-password" required>
+				<button type="submit">Registrarse</button>
 			</div>
 </body>
 </html>
