@@ -16,3 +16,7 @@
 .sale-offer-price {
     color: rgb(10, 172, 10) !important;
 }
+.thumbnail-card {
+    height: 200px !important;
+    max-width: 200px !important;
+}
