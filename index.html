@@ -1,79 +1,693 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<title>PetShop - Tu tienda de mascotas</title>
-	<meta charset="utf-8">
-    <meta name="description"content="Venta de productos de mascotas">
+    <title>PetShop - Tu tienda de mascotas</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Venta de productos de mascotas">
     <meta name="author" content="Virturo Vidón">
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Archivos CSS de Bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<!-- Archivos CSS personalizados -->
-	<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<!-- Barra de navegación -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <img class="logo"src="img/icon.png" alt="">
-		<a class="navbar-brand" href="index.html">PetShop</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Inicio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="nosotros.html">Nosotros</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="registro.html">Registrarse</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="ingresar.html">Ingresar</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-<main role="main">
-    <div class="container">
-        <section class="text-center">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/foto1.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="img/foto2.jpg" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="img/foto3.jpg" alt="">
-                  </div>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <img class="logo" src="img/icon.png" alt="">
+        <a class="navbar-brand" href="index.html">PetShop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ingresar.html">Ingresar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Carrusel fotos -->
+    <main role="main">
+        <div class="container">
+            <section class="text-center">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/foto1.jpg" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/foto2.jpg" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/foto3.jpg" alt="Imagen 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Siguiente</span>
-                </a>
-              </div>
-        </section>
+            </section>
+        </div>
+    </main>
+
+    <!-- PRODUCTOS -->
+    <div class="album py-2 bg-light">
+        <div class="container">
+            <div id="product-item" class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card mb-4 box-shadow">
+                        <div class="text-center">
+                            <img class="card-img-top thumbnail-product" src="img/petican.jpg" alt="">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                            <div class="lead text-secondary fw-bold">
+                                <strong>EN OFERTA</strong>
+                            </div>
+                            <br>
+                            <div class="lead text-danger">
+                                <span class="sale-real-price fw-bold">
+                                    <strong>$29.450</strong>
+                                </span>
+                                <span class="sale-offer-price fw-bold">
+                                    <strong>$21.990</strong>
+                                </span>
+                            </div>
+
+                            <b>Petican 25KG - Carne y Cereales - Perro Adulto</b>
+                            <br>
+                            <b>Descripción</b>
+                            <div class="text-truncate">
+                                Este Alimento seco para perro adulto, de 25 kg, sabor carne y cereales, marca Petican,
+                                es otra de las buenas opciones que te ofrecemos para alimentar a ese integrante tan
+                                importante de la familia: tu mascota. Preparado en base a carne y cereales, este
+                                producto está desarrollado para alimentar a perros adultos de razas medianas y grandes;
+                                por eso contiene todas las vitaminas, minerales y nutrientes que ellos necesitan para
+                                mantenerse saludable y en las mejores condiciones físicas.
+                            </div>
+                            <br>
+                            <b>En stock 6 unidades</b>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Comprar
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</main>
 
-		<h2 class="text-center mb-4">Nuestros productos</h2>
+    <footer>
+        <div class="container text-center">
+            <p>
+                <a href="#">Volver arriba</a>
+            </p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Contacto</h3>
+              <p>Teléfono: 222-256-5690</p>
+              <p>Correo electrónico: PetShop@VirtudoVidon.cl</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Síguenos</h3>
+              <ul class="list-unstyled">
+                <li><a href="https://api.whatsapp.com/"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.twitter.com/"> <i class="fab fa-twitter"></i>Twitter</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3>Acerca de nosotros</h3>
+              <p>Somos una tienda en línea de mascotas comprometidos con el bienestar animal.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
-		<!-- Productos destacados -->
-		<div class="row">
-			<div class="col-md-4">
-				<img src="img/saco.jpg" class="img-fluid" alt="Productos">
-				<h3 class="text-center">Saco "KNINO DOG" Adulto</h3>
+</body>
 
-
-                img/foto1.jpg
+</html>
