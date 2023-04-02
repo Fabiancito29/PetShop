@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mis datos</title>
+  </head>
+  <body>
+    <div id=registro.html>
+      <p id="rut"></p>
+      <p id="nombre"></p>
+      <p id="apellido"></p>
+      <p id="email"></p>
+      <p id="dirección"></p>
+      <p id="password"></p>
+      <p id="confirm-password"></p>
+      <button type="button" id="guardar">Guardar</button>
+      <button type="button" id="borrar">Limpiar</button>
+    </div>
+    <script>
+      //Comprobar si el usuario ha iniciado sesión
+      const rut = localStorage.getItem('Rut');
+      const nombre = localStorage.getItem('Nomnbre');
+      const apellido = localStorage.getItem('Apellido');
+      const email = localStorage.getItem('Correo Electrónico');
+      const dirección = localStorage.getItem('Dirección');
+      const password = localStorage.getItem('Contraseña');
+      const confirmPassword = localStorage.getItem('Repetir contraseña');
+ 
+
+      if (rut && nombre && apellido && email && dirección && password && confirmPassword ) {
+        //Mostrar los datos del usuario
+        document.getElementById('Rut').textContent = `Rut: ${rut}`;
+        document.getElementById('Nombre').textContent = `Nombre: ${nombre}`;
+        document.getElementById('Apellido').textContent = `Apellido: ${apellido}`;
+        document.getElementById('Correo Electrónico').textContent = `Correo Electrónico: ${email}`;
+        document.getElementById('Dirección').textContent = `Dirección: ${dirección}`;
+        document.getElementById('Contraseña').textContent = `Contraseña: ${password}`;
+        document.getElementById('Repetir Contraseña').textContent = `Repetir Contraseña: ${confirmPassword}`;
+        
+
+      } else {
+        //Redirigir al usuario a la página de inicio de sesión si no ha iniciado sesión
+        window.location.href = "ingresar.html";
+      }
+
+      const rutInput = document.getElementById('Rut');
+      const nombreInput = document.getElementById('Nombre');
+      const apellidoInput = document.getElementById('Apellido');
+      const emailInput = document.getElementById('Correo Electrónico');
+      const direccionInput = document.getElementById('Dirección');
+      const passwordInput = document.getElementById('Contraseña');
+      const confirmPasswordInput = document.getElementById('Repetir Contraseña');
+      const guardarBtn = document.getElementById('guardar');
+      const limpiarBtn = document.getElementById('limpiar');
+
+      guardarBtn.addEventListener('click', () => {
+        // Guardar los datos en una base de datos o en una variable
+        const rut = rutInput.value;
+        const nombre = nombreInput.value;
+        const apellido = apellidoInput.value;
+        const email = emailInput.value;
+        const direccion = direccionInput.value;
+        const password = passwordInput.value;
+        const confirmPassword = confirmPasswordInput.value;
+        console.log(`Datos guardados: ${rut}, ${nombre}, ${apellido}, ${email}, ${password}, ${confirmPassword},  `);
+      });
+      
+      borrarBtn.addEventListener('click', () => {
+        // Limpiar los campos del formulario
+        rutInput.value = '';
+        nombreInput.value = '';
+        apellidoInput.value = '';
+        emailInput.value = '';
+        direccionInput.value = '';
+        passwordInput.value = '';
+        confirmPasswordInput.value = '';
+
+      });
+    </script>
+  </body>
+</html>
