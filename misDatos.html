@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <title>PetShop - Registro</title>
+  <title>PetShop - Mis datos</title>
   <meta charset="utf-8">
   <meta name="description" content="Venta de productos de mascotas">
   <meta name="author" content="Virturo Vidón">
@@ -18,7 +18,7 @@
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <img class="logo" src="img/icon.png" alt="">
-    <a class="navbar-brand" href="index.html">PetShop</a>
+    <a class="navbar-brand" href="index2.html">PetShop</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,13 +32,16 @@
           <a class="nav-link " href="nosotros2.html">Nosotros</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="misDatos.html">Mis Datos</a>
+          <a class="nav-link" href="misDatos.html">Mis datos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="misComprasAnteriores.html">Mis compras anteriores</a>
+          <a class="nav-link" href="miscompras.html">Mis compras anteriores</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="cerrarSesion.html">Cerrar sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carrito.html">Carrito</a>
         </li>
       </ul>
     </div>
@@ -110,17 +113,7 @@
 
 
 </body>
-
-      if (rut && nombre && apellido && email && dirección && password && confirmPassword ) {
-        //Mostrar los datos del usuario
-        document.getElementById('Rut').textContent = `Rut: ${rut}`;
-        document.getElementById('Nombre').textContent = `Nombre: ${nombre}`;
-        document.getElementById('Apellido').textContent = `Apellido: ${apellido}`;
-        document.getElementById('Correo Electrónico').textContent = `Correo Electrónico: ${email}`;
-        document.getElementById('Dirección').textContent = `Dirección: ${dirección}`;
-        document.getElementById('Contraseña').textContent = `Contraseña: ${password}`;
-        document.getElementById('Repetir Contraseña').textContent = `Repetir Contraseña: ${confirmPassword}`;
-        
+<footer>
 
   <div class="container text-center">
     <p>
@@ -150,3 +143,4 @@
     </div>
   </div>
 </footer>
+</html>
