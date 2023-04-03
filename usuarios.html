@@ -43,3 +43,125 @@
             </ul>
         </div>
     </nav>
+
+    <div class="container">
+        <section class="text-center">
+            <P></P>
+            <h1>Mantenedor de usuarios</h1>
+        </section>
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="id">ID:</label>
+                <input type="text" class="form-control" id="id" placeholder="Ingrese el ID del usuario">
+              </div>
+              <div class="form-group">
+                <label for="tipo-usuario">Tipo de usuario:</label>
+                <select class="form-control" id="tipo-usuario">
+                  <option>Cliente</option>
+                  <option>Administrador</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="rut">RUT:</label>
+                <input type="text" class="form-control" id="rut" placeholder="Ingrese el RUT del usuario">
+              </div>
+              <div class="form-group">
+                <label for="nombres">Nombres:</label>
+                <input type="text" class="form-control" id="nombres" placeholder="Ingrese los nombres del usuario">
+              </div>
+              <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidos" placeholder="Ingrese los apellidos del usuario">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" class="form-control" id="correo" placeholder="Ingrese el correo electrónico del usuario">
+              </div>
+              <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" class="form-control" id="direccion" placeholder="Ingrese la dirección del usuario">
+              </div>
+              <div class="form-group">
+                <label for="subscripcion">Subscripción:</label>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="subscripcion">
+                  <label class="form-check-label" for="subscripcion">Deseo suscribirme con un aporte de $3.000
+                    mensuales y obtener un 5% de descuento en mis compras.</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contraseña">Contraseña:</label>
+                <div class="input-group">
+                  <input type="password" class="form-control" id="contraseña" placeholder="Ingrese la contraseña del usuario">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button">Generar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary mr-2">Guardar</button>
+              <button type="button" class="btn btn-success mr-2">Nuevo</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tipo de Usuario</th>
+            <th>RUT</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+            <th>Dirección</th>
+            <th>Subscripción</th>
+            <th>Imagen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Cliente</td>
+            <td>12.345.678-9</td>
+            <td>Juan</td>
+            <td>Pérez</td>
+            <td>juanperez@gmail.com</td>
+            <td>Av. Providencia 1234</td>
+            <td>Si</td>
+            <td><img src="imagen1.jpg"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Administrador</td>
+            <td>11.111.111-1</td>
+            <td>María</td>
+            <td>González</td>
+            <td>mariagonzalez@gmail.com</td>
+            <td>Alameda 987</td>
+            <td>No</td>
+            <td><img src="imagen2.jpg"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Cliente</td>
+            <td>14.124.421-3</td>
+            <td>Edda</td>
+            <td>Menke</td>
+            <td>eda@gmail.com</td>
+            <td>El Castillo 1234</td>
+            <td>No</td>
+            <td><img src="imagen2.jpg"></td>
+          </tr>
+          <!-- Aquí podrías agregar más filas con los datos que necesites -->
+        </tbody>
+      </table>

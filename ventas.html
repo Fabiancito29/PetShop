@@ -43,3 +43,92 @@
             </ul>
         </div>
     </nav>
+    <section class="text-center">
+        <p></p>
+        <h1>Historial de ventas</h1>
+        <p></p>
+    </section>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nro. Boleta</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Nombre Cliente</th>
+            <th scope="col">Subscrito</th>
+            <th scope="col">Monto Total</th>
+            <th scope="col">Estado Actual</th>
+            <th scope="col">Detalle</th>
+            <th scope="col">Cambiar Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">001</th>
+            <td>2023-03-30</td>
+            <td>Juan Perez</td>
+            <td>Sí</td>
+            <td>$10.000</td>
+            <td>Despachado</td>
+            <td><button class="btn btn-primary">Ver Detalle</button></td>
+            <td>
+              <select class="form-select">
+                <option >Anulado</option>
+                <option>Vendido</option>
+                <option selected>Despachado</option>
+                <option>Entregado</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">002</th>
+            <td>2023-03-29</td>
+            <td>María González</td>
+            <td>No</td>
+            <td>$5.000</td>
+            <td>Despachado</td>
+            <td><button class="btn btn-primary">Ver Detalle</button></td>
+            <td>
+              <select class="form-select">
+                <option>Anulado</option>
+                <option>Vendido</option>
+                <option selected>Despachado</option>
+                <option>Entregado</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">003</th>
+            <td>2023-03-28</td>
+            <td>Pedro Torres</td>
+            <td>Sí</td>
+            <td>$15.000</td>
+            <td>Entregado</td>
+            <td><button class="btn btn-primary">Ver Detalle</button></td>
+            <td>
+              <select class="form-select">
+                <option>Anulado</option>
+                <option>Vendido</option>
+                <option>Despachado</option>
+                <option selected>Entregado</option>
+              </select>
+            </td>
+            <tr>
+                <th scope="row">004</th>
+                <td>2023-03-28</td>
+                <td>Edda Menke</td>
+                <td>Sí</td>
+                <td>$25.000</td>
+                <td>Anulado</td>
+                <td><button class="btn btn-primary">Ver Detalle</button></td>
+                <td>
+                  <select class="form-select">
+                    <option selected>Anulado</option>
+                    <option>Vendido</option>
+                    <option>Despachado</option>
+                    <option>Entregado</option>
+                  </select>
+                </td>
+          </tr>
+        </tbody>
+      </table>
+      
