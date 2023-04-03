@@ -1,5 +1,22 @@
-.logo{
+.logo {
     width: 40px;
     margin-right: 10px;
+}
 
+.thumbnail-product {
+    height: 150px !important;
+    max-width: 150px !important;
+}
+
+.sale-real-price {
+    text-decoration: line-through;
+
+}
+
+.sale-offer-price {
+    color: rgb(10, 172, 10) !important;
+}
+.thumbnail-card {
+    height: 200px !important;
+    max-width: 200px !important;
 }
