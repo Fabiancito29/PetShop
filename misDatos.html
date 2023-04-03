@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
   <head>
     <meta charset="UTF-8">
@@ -26,6 +27,119 @@
       const password = localStorage.getItem('Contraseña');
       const confirmPassword = localStorage.getItem('Repetir contraseña');
  
+=======
+<html lang="es">
+
+<head>
+  <title>PetShop - Registro</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Venta de productos de mascotas">
+  <meta name="author" content="Virturo Vidón">
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <img class="logo" src="img/icon.png" alt="">
+    <a class="navbar-brand" href="index.html">PetShop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index2.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="nosotros2.html">Nosotros</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="misDatos.html">Mis Datos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="misComprasAnteriores.html">Mis compras anteriores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cerrarSesion.html">Cerrar sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <p></p>
+  <p></p>
+
+  <!-- Formulario de registro de usuario -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <h2>Mis Datos</h2>
+          <div class="mb-3">
+            <label for="rut" class="form-label">RUT</label>
+            <input type="text" class="form-control" id="rut" placeholder="Ingresa tu RUT">
+          </div>
+          <div class="mb-3">
+            <label for="nombres" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="nombres" placeholder="Ingresa tus nombres">
+          </div>
+          <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="apellidos" placeholder="Ingresa tus apellidos">
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
+          </div>
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección">
+          </div>
+          <div class="mb-3">
+            <label for="contraseña" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña">
+          </div>
+          <div class="mb-3">
+            <label for="confirmar-contraseña" class="form-label">Confirmar contraseña</label>
+            <input type="password" class="form-control" id="confirmar-contraseña" placeholder="Confirma tu contraseña">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Subir foto de perfil</label>
+            <input type="file" class="form-control-file" id="foto-perfil" accept="image/*">
+          </div>
+          <div class="mb-3">
+            <img src="" id="preview-foto" class="img-fluid" alt="Vista previa de la foto de perfil">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="subscripcion">
+            <label class="form-check-label" for="subscripcion">Deseo suscribirme con un aporte de $3.000 mensuales y
+              obtener un 5% de descuento en mis compras.</label>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="window.location.href='index2.html'">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Actualizar la imagen de vista previa al seleccionar un archivo
+    document.getElementById("foto-perfil").addEventListener("change", function (event) {
+      var imagen = document.getElementById("preview-foto");
+      imagen.src = URL.createObjectURL(event.target.files[0]);
+    });
+  </script>
+
+
+
+
+</body>
+>>>>>>> 2d1b25f32defc38c6e25e9af936738c4247c649f
 
       if (rut && nombre && apellido && email && dirección && password && confirmPassword ) {
         //Mostrar los datos del usuario
@@ -38,6 +152,7 @@
         document.getElementById('Repetir Contraseña').textContent = `Repetir Contraseña: ${confirmPassword}`;
         
 
+<<<<<<< HEAD
       } else {
         //Redirigir al usuario a la página de inicio de sesión si no ha iniciado sesión
         window.location.href = "ingresar.html";
@@ -79,3 +194,33 @@
     </script>
   </body>
 </html>
+=======
+  <div class="container text-center">
+    <p>
+
+    </p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Contacto</h3>
+        <p>Teléfono: 222-256-5690</p>
+        <p>Correo electrónico: PetShop@VirtudoVidon.cl</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Síguenos</h3>
+        <ul class="list-unstyled">
+          <li><a href="https://api.whatsapp.com/"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.twitter.com/"> <i class="fab fa-twitter"></i>Twitter</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3>Acerca de nosotros</h3>
+        <p>Somos una tienda en línea de mascotas comprometidos con el bienestar animal.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+>>>>>>> 2d1b25f32defc38c6e25e9af936738c4247c649f
