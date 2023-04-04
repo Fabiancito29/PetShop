@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<!-- Estilos personalizados -->
+	<style>
+		.container {
+			max-width: 500px;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+	</style>
 </head>
 
 <body>
@@ -43,3 +55,80 @@
             </ul>
         </div>
     </nav>
+
+    <div class="container">
+		<h1 class="text-center mb-4">Mantenedor de Bodega</h1>
+		<div class="form-group">
+			<label for="categoria">Categoría:</label>
+			<select class="form-control" id="categoria">
+				<option value="perro">Perro</option>
+				<option value="gato">Gato</option>
+				<option value="pato">Pato</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="nombre">Nombre:</label>
+			<input type="text" class="form-control" id="nombre">
+		</div>
+		<div class="form-group">
+			<label for="cantidad">Cantidad:</label>
+			<input type="number" class="form-control" id="cantidad" min="1">
+		</div>
+		<div class="form-group">
+			<label for="imagen">Imagen:</label>
+			<input type="file" class="form-control-file" id="imagen">
+		</div>
+		<button type="button" class="btn btn-primary btn-block mb-3">Agregar</button>
+		<button type="button" class="btn btn-secondary btn-block">Nuevo</button>
+	</div>
+	
+	<!-- jQuery y Popper.js -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/XwpSbdEJg1wMIdf" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+    <div class="container">
+        <table class="table table-striped mx-auto">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Categoría</th>
+              <th>Nombre</th>
+              <th>Estado</th>
+              <th>Opciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Perro</td>
+              <td>MasterDog 15kg Adulto HP</td>
+              <td>Disponible</td>
+              <td><button class="btn btn-danger">Eliminar</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Gato</td>
+              <td>CatChow Churu 100g</td>
+              <td>En bodega</td>
+              <td><button class="btn btn-danger">Eliminar</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Pato</td>
+              <td>Pelota de futbol para patos</td>
+              <td>Agotado</td>
+              <td><button class="btn btn-danger">Eliminar</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+
+
+
+
+
+    
