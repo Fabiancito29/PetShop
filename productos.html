@@ -46,59 +46,64 @@
 
 
     <div class="container">
-        <h1 class="text-center my-4">Mantenedor de Productos</h1>
-        <form id="formulario">
-          <div class="form-group row">
-            <label for="id" class="col-sm-2 col-form-label">ID:</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="id" name="id">
-            </div>
-            <label for="categoria" class="col-sm-2 col-form-label">Categoría:</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="categoria" name="categoria">
-            </div>
+      <h1 class="text-center my-4">Mantenedor de Productos</h1>
+      <form id="formulario">
+        <div class="form-group row">
+          <label for="id" class="col-sm-2 col-form-label">ID:</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="id" name="id">
           </div>
-          <div class="form-group row">
-            <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="nombre" name="nombre">
-            </div>
+          <label for="categoria" class="col-sm-2 col-form-label">Categoría:</label>
+          <div class="col-sm-4">
+            <select class="form-control" id="categoria" name="categoria">
+              <option value="Perros">Perros</option>
+              <option value="Gatos">Gatos</option>
+              <option value="Patos">Patos</option>
+            </select>
           </div>
-          <div class="form-group row">
-            <label for="descripcion" class="col-sm-2 col-form-label">Descripción:</label>
-            <div class="col-sm-10">
-              <textarea class="form-control" id="descripcion" name="descripcion"></textarea>
-            </div>
+        </div>
+        <div class="form-group row">
+          <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="nombre" name="nombre">
           </div>
-          <div class="form-group row">
-            <label for="precio" class="col-sm-2 col-form-label">Precio:</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="precio" name="precio">
-            </div>
-            <label for="desc_sub" class="col-sm-2 col-form-label">Descuento Subscriptor:</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="desc_sub" name="desc_sub">
-            </div>
+        </div>
+        <div class="form-group row">
+          <label for="descripcion" class="col-sm-2 col-form-label">Descripción:</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="descripcion" name="descripcion"></textarea>
           </div>
-          <div class="form-group row">
-            <label for="desc_oferta" class="col-sm-2 col-form-label">Descuento por Oferta:</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="desc_oferta" name="desc_oferta">
-            </div>
-            <label for="foto" class="col-sm-2 col-form-label">Foto del Producto:</label>
-            <div class="col-sm-4">
-              <input type="file" class="form-control-file" id="foto" name="foto">
-            </div>
+        </div>
+        <div class="form-group row">
+          <label for="precio" class="col-sm-2 col-form-label">Precio:</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="precio" name="precio">
           </div>
-          <div class="form-group row">
-            <div class="col-sm-12">
-              <button type="submit" class="btn btn-primary mr-2">Guardar</button>
-              <button type="button" class="btn btn-success mr-2" onclick="limpiarFormulario()">Nuevo</button>
-              <button type="button" class="btn btn-danger" onclick="eliminarProducto()">Eliminar</button>
-            </div>
+          <label for="desc_sub" class="col-sm-2 col-form-label">Descuento Subscriptor:</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="desc_sub" name="desc_sub">
           </div>
-        </form>
-      </div>
+        </div>
+        <div class="form-group row">
+          <label for="desc_oferta" class="col-sm-2 col-form-label">Descuento por Oferta:</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="desc_oferta" name="desc_oferta">
+          </div>
+          <label for="foto" class="col-sm-2 col-form-label">Foto del Producto:</label>
+          <div class="col-sm-4">
+            <input type="file" class="form-control-file" id="foto" name="foto">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <button type="submit" class="btn btn-primary mr-2">Guardar</button>
+            <button type="button" class="btn btn-success mr-2" onclick="limpiarFormulario()">Nuevo</button>
+            <button type="button" class="btn btn-danger" onclick="eliminarProducto()">Eliminar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.10/dist/sweetalert2.min.js"></script>

@@ -48,116 +48,82 @@
     <section class="text-center">
         <div class="container">
             <h1>Mis compras anteriores</h1>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Nro Boleta</th>
-                        <th>Cantidad</th>
-                        <th>Precio unitario</th>
-                        <th>Descuento</th>
-                        <th>Precio sin IVA</th>
-                        <th>Precio total con IVA</th>
-                        <th>Fecha</th>
-                    </tr>
-                </thead>
+            <table class="table table-striped">
+              <thead>
                 <tr>
-                    <tbody id="carrito">
-                        <td scope="col">120</td>
-                        <td scope="col">2</td>
-                        <td scope="col">$31.990</td>
-                        <td scope="col">%15,63</td>
-                        <td scope="col">$53.980</td>
-                        <td scope="col">$64.236,20</td>
-                        <td scope="col">01/02/2022</td>
-                        <tr>
-                            <td scope="col">190</td>
-                            <td scope="col">3</td>
-                            <td scope="col">$23.990</td>
-                            <td scope="col">%16,7</td>
-                            <td scope="col">$59.970</td>
-                            <td scope="col">$71.364,30</td>
-                            <td scope="col">24/04/2022</td>
-                        <tr>
-                            <td scope="col">300</td>
-                            <td scope="col">1</td>
-                            <td scope="col">$29.990</td>
-                            <td scope="col">%16,67</td>
-                            <td scope="col">$24.990</td>
-                            <td scope="col">$29.738,10</td>
-                            <td scope="col">14/08/2022</td>
-                        <tr>
-                            <td scope="col">349</td>
-                            <td scope="col">1</td>
-                            <td scope="col">$5.990</td>
-                            <td scope="col">%0</td>
-                            <td scope="col">$5.990</td>
-                            <td scope="col">$7.128,10</td>
-                            <td scope="col">23/10/2022</td>
-                        <tr>
-                            <td scope="col">400</td>
-                            <td scope="col">2</td>
-                            <td scope="col">$12.990</td>
-                            <td scope="col">%61,64</td>
-                            <td scope="col">$9.980</td>
-                            <td scope="col">$11.876,20</td>
-                            <td scope="col">20/11/2022</td>
-                        </tr>
-                        <tr>
-                          <td scope="col">430</td>
-                          <td scope="col">2</td>
-                          <td scope="col">$19.990</td>
-                          <td scope="col">%45,02</td>
-                          <td scope="col">$21.990</td>
-                          <td scope="col">$26.168,10</td>
-                          <td scope="col">26/11/2023</td>
-                      </tr>
-                        <tr>
-                            <td scope="col">454</td>
-                            <td scope="col">1</td>
-                            <td scope="col">$19.990</td>
-                            <td scope="col">%45,02</td>
-                            <td scope="col">$10.990</td>
-                            <td scope="col">$13.078,10</td>
-                            <td scope="col">20/12/2022</td>
-                        </tr>
-                        <tr>
-                          <td scope="col">500</td>
-                          <td scope="col">1</td>
-                          <td scope="col">$22.990</td>
-                          <td scope="col">%26,09</td>
-                          <td scope="col">$16.900</td>
-                          <td scope="col">$20.111</td>
-                          <td scope="col">30/12/2022</td>
-                      </tr>
-                      <tr>
-                        <td scope="col">550</td>
-                        <td scope="col">1</td>
-                        <td scope="col">$12.990</td>
-                        <td scope="col">%61,64</td>
-                        <td scope="col">$4.990</td>
-                        <td scope="col">$5.938,10</td>
-                        <td scope="col">10/2/2023</td>
-                    </tr>
-                        <tr>
-                            <td scope="col">666</td>
-                            <td scope="col">1</td>
-                            <td scope="col">$2.990</td>
-                            <td scope="col">%26,76</td>
-                            <td scope="col">$2.190</td>
-                            <td scope="col">$2.606,10</td>
-                            <td scope="col">10/3/2023</td>
-                        </tr>
-                        <tr>
-                        <td scope="col"></td>
-                        <td scope="col"></td>
-                        <td scope="col"></td>
-                        <td scope="col"></td>
-                        <td scope="col"></td>
-                        <td scope="col"></td>
+                  <th>Nro boleta</th>
+                  <th>Fecha venta</th>
+                  <th>Fecha despacho</th>
+                  <th>Fecha entrega</th>
+                  <th>Monto total</th>
+                  <th>Estado actual</th>
+                  <th>Opciones</th>
                 </tr>
-                </tbody>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022-01-01</td>
+                  <td>2022-01-05</td>
+                  <td>2022-01-10</td>
+                  <td>$120.560</td>
+                  <td>Entregado</td>
+                  <td><a href="boleta.html">Ver detalle</a>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2022-02-01</td>
+                  <td>2022-02-05</td>
+                  <td>2022-02-10</td>
+                  <td>$20.990</td>
+                  <td>Despachado</td>
+                  <td><a href="#">Ver detalle</a>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2022-03-01</td>
+                  <td>2022-03-05</td>
+                  <td>2022-03-10</td>
+                  <td>$34.780</td>
+                  <td>Vendido</td>
+                  <td><a href="#">Ver detalle</a>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2023-03-01</td>
+                  <td>2023-03-05</td>
+                  <td>2023-03-10</td>
+                  <td>$14.080</td>
+                  <td>Vendido</td>
+                  <td><a href="#">Ver detalle</a>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>2023-03-12</td>
+                  <td>2023-03-15</td>
+                  <td>2023-03-20</td>
+                  <td>$12.780</td>
+                  <td>Despachado</td>
+                  <td><a href="#">Ver detalle</a>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>2023-04-02</td>
+                  <td>2023-04-06</td>
+                  <td>2023-04-10</td>
+                  <td>$56.220</td>
+                  <td>Entregado</td>
+                  <td><a href="#">Ver detalle</a>
+                </tr>
+              </tbody>
+            </table>
         </div>
     </section>
+
+
+    
+
+
 </body>
 <footer style="position: fixed; bottom: 0;">
 	<div class="container text-center">
