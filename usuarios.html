@@ -2,166 +2,171 @@
 <html lang="es">
 
 <head>
-    <title>PetShop - Admin usuarios</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Venta de productos de mascotas">
-    <meta name="author" content="Virturo Vidón">
-    <link rel="icon" href="img/icon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <title>PetShop - Admin usuarios</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Venta de productos de mascotas">
+  <meta name="author" content="Virturo Vidón">
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <img class="logo" src="img/icon.png" alt="">
-        <a class="navbar-brand" href="indexA.html">PetShop</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="indexA.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="nosotrosA.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="misDatosA.html">Mis datos</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="administracion.html">Administrar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cerrarSesionA.html">Cerrar sesión</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <img class="logo" src="img/icon.png" alt="">
+    <a class="navbar-brand" href="indexA.html">PetShop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="ropaA.html">¡Concurso!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexA.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotrosA.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="misDatosA.html">Mis datos</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="administracion.html">Administrar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cerrarSesionA.html">Cerrar sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <div class="container">
-        <section class="text-center">
-            <P></P>
-            <h1>Mantenedor de usuarios</h1>
-        </section>
-        <form>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="id">ID:</label>
-                <input type="text" class="form-control" id="id" placeholder="Ingrese el ID del usuario">
-              </div>
-              <div class="form-group">
-                <label for="tipo-usuario">Tipo de usuario:</label>
-                <select class="form-control" id="tipo-usuario">
-                  <option>Cliente</option>
-                  <option>Administrador</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="rut">RUT:</label>
-                <input type="text" class="form-control" id="rut" placeholder="Ingrese el RUT del usuario">
-              </div>
-              <div class="form-group">
-                <label for="nombres">Nombres:</label>
-                <input type="text" class="form-control" id="nombres" placeholder="Ingrese los nombres del usuario">
-              </div>
-              <div class="form-group">
-                <label for="apellidos">Apellidos:</label>
-                <input type="text" class="form-control" id="apellidos" placeholder="Ingrese los apellidos del usuario">
-              </div>
+  <div class="container">
+    <section class="text-center">
+      <P></P>
+      <h1>Mantenedor de usuarios</h1>
+    </section>
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="id">ID:</label>
+            <input type="text" class="form-control" id="id" placeholder="Ingrese el ID del usuario">
+          </div>
+          <div class="form-group">
+            <label for="tipo-usuario">Tipo de usuario:</label>
+            <select class="form-control" id="tipo-usuario">
+              <option>Cliente</option>
+              <option>Administrador</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="rut">RUT:</label>
+            <input type="text" class="form-control" id="rut" placeholder="Ingrese el RUT del usuario">
+          </div>
+          <div class="form-group">
+            <label for="nombres">Nombres:</label>
+            <input type="text" class="form-control" id="nombres" placeholder="Ingrese los nombres del usuario">
+          </div>
+          <div class="form-group">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" class="form-control" id="apellidos" placeholder="Ingrese los apellidos del usuario">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="correo">Correo:</label>
+            <input type="email" class="form-control" id="correo"
+              placeholder="Ingrese el correo electrónico del usuario">
+          </div>
+          <div class="form-group">
+            <label for="direccion">Dirección:</label>
+            <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Ingrese la dirección del usuario"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="subscripcion">Subscripción:</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="subscripcion">
+              <label class="form-check-label" for="subscripcion">Deseo suscribirme con un aporte de $3.000
+                mensuales y obtener un 5% de descuento en mis compras.</label>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="correo">Correo:</label>
-                <input type="email" class="form-control" id="correo" placeholder="Ingrese el correo electrónico del usuario">
-              </div>
-              <div class="form-group">
-                <label for="direccion">Dirección:</label>
-                <input type="text" class="form-control" id="direccion" placeholder="Ingrese la dirección del usuario">
-              </div>
-              <div class="form-group">
-                <label for="subscripcion">Subscripción:</label>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="subscripcion">
-                  <label class="form-check-label" for="subscripcion">Deseo suscribirme con un aporte de $3.000
-                    mensuales y obtener un 5% de descuento en mis compras.</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="contraseña">Contraseña:</label>
-                <div class="input-group">
-                  <input type="password" class="form-control" id="contraseña" placeholder="Ingrese la contraseña del usuario">
-                  <div class="input-group-append">
-                    <button class="btn btn-secondary" type="button">Generar</button>
-                  </div>
-                </div>
+          </div>
+          <div class="form-group">
+            <label for="contraseña">Contraseña:</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="contraseña"
+                placeholder="Ingrese la contraseña del usuario">
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">Generar</button>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <button type="submit" class="btn btn-primary mr-2">Guardar</button>
-              <button type="button" class="btn btn-success mr-2">Nuevo</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-            </div>
-          </div>
-        </form>
+        </div>
       </div>
-<p></p>
-      <table class="tabla-contenedor">
-        <thead>
-          <tr>
-            <th> ID </th>
-            <th> Tipo de Usuario </th>
-            <th> RUT </th>
-            <th> Nombres </th>
-            <th> Apellidos </th>
-            <th> Correo </th>
-            <th> Dirección </th>
-            <th> Subscripción </th>
-            <th> Imagen </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Cliente</td>
-            <td>12.345.678-9</td>
-            <td>Juan</td>
-            <td>Pérez</td>
-            <td>juanperez@gmail.com</td>
-            <td>Av. Providencia 1234</td>
-            <td>Si</td>
-            <td><img src="imagen1.jpg"></td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Administrador</td>
-            <td>11.111.111-1</td>
-            <td>Mariosol</td>
-            <td>González</td>
-            <td>mariagonzalez@gmail.com</td>
-            <td>Alameda 987</td>
-            <td>No</td>
-            <td><img src="imagen2.jpg"></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Cliente</td>
-            <td>14.124.421-3</td>
-            <td>Edda</td>
-            <td>Menke</td>
-            <td>eda@gmail.com</td>
-            <td>El Castillo 1234</td>
-            <td>No</td>
-            <td><img src="imagen2.jpg"></td>
-          </tr>
-          <!-- Aquí podrías agregar más filas con los datos que necesites -->
-        </tbody>
-      </table>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-primary mr-2">Guardar</button>
+          <button type="button" class="btn btn-success mr-2">Nuevo</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <p></p>
+  <table class="tabla-contenedor">
+    <thead>
+      <tr>
+        <th> ID </th>
+        <th> Tipo de Usuario </th>
+        <th> RUT </th>
+        <th> Nombres </th>
+        <th> Apellidos </th>
+        <th> Correo </th>
+        <th> Dirección </th>
+        <th> Subscripción </th>
+        <th> Imagen </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Cliente</td>
+        <td>12.345.678-9</td>
+        <td>Juan</td>
+        <td>Pérez</td>
+        <td>juanperez@gmail.com</td>
+        <td>Av. Providencia 1234</td>
+        <td>Si</td>
+        <td><img src="imagen1.jpg"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Administrador</td>
+        <td>11.111.111-1</td>
+        <td>Mariosol</td>
+        <td>González</td>
+        <td>mariagonzalez@gmail.com</td>
+        <td>Alameda 987</td>
+        <td>No</td>
+        <td><img src="imagen2.jpg"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Cliente</td>
+        <td>14.124.421-3</td>
+        <td>Edda</td>
+        <td>Menke</td>
+        <td>eda@gmail.com</td>
+        <td>El Castillo 1234</td>
+        <td>No</td>
+        <td><img src="imagen2.jpg"></td>
+      </tr>
+      <!-- Aquí podrías agregar más filas con los datos que necesites -->
+    </tbody>
+  </table>
