@@ -1,90 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width device-width, initial-scale=1.0">
-    <title> Formulario</title>
-</head>
-
-<body style="background-color: #3292eca8;">
-    <form style="background-color: rgb(187, 208, 241)">
-        <fieldset>
-            <legend style="font-family: Century">Recompilacion de Datos</legend>
-            <center>
-                <h1 style="font-family: Bebas">Datos Personales</h1><br>
-            </center>
-            <label style="font-family:'Arial Narrow">Ingrese Nombre: </label>
-            <input type="text"; name="usuario">
-                <label style="font-family: 'Arial Narrow'">Ingrese Direccion : </label>
-                <input type="text"; name="telefono"><br><br>
-            <label style="font-family: 'Arial Narrow'">Ingrese Apellido: </label>
-            <input type="text"; name="apellido">
-            <label style="font-family: 'Arial Narrow'">Ingrese Direccion : </label>
-            <input type="text"; name="direccion"><br><br>
-
-            <input type="radio"; name="Genero"; value="Hombre">
-            <label style="font-family: 'Arial Narrow'">Hombre</label>
-            <input type="radio"; name="Genero"; value="Mujer">
-            <label style="font-family: 'Arial Narrow'">Mujer</label>
-            <input type="radio"; name="Genero"; value="Prefiero no decirlo">
-            <label style="font-family: 'Arial Narrow'">Prefiero no decirlo</label><br><br>
-
-            <label for="comunas">Lista de Comunas</label>
-            <select id="comunas" name="comunas">
-                <option value="Cerrillos">Cerrillos</option>
-                <option value="Cerro Navia">Cerro Navia</option>
-                <option value="Conchali">Conchali</option>
-                <option value="El Bosque">El Bosque</option>
-                <option value="Estación Central">Estación Central</option>
-                <option value="Huechuraba">Huechuraba</option>
-                <option value="Independencia">Independencia</option>
-                <option value="La Cisterna">La Cisterna</option>
-                <option value="La Florida">La Florida</option>
-                <option value="La Granja">La Granja</option>
-                <option value="La Pintana">La Pintana</option>
-                <option value="La Reina">La Reina</option>
-                <option value="Las Condes">Las Condes</option>
-                <option value="Lo Barnechea">Lo Barnechea</option>
-                <option value="Lo Espejo">Lo Espejo</option>
-                <option value="Lo Prado">Lo Prado</option>
-                <option value="Macul">Macul</option>
-                <option value="Maipú">Maipú</option>
-                <option value="Ñuñoa">Ñuñoa</option>
-                <option value="Padre Hurtado">Padre Hurtado</option>
-                <option value="Pedro Aguirre Cerda">Pedro Aguirre Cerda</option>
-                <option value="Peñalolen">Peñalolen</option>
-                <option value="Pirque">Pirque</option>
-                <option value="Providencia">Providencia</option>
-                <option value="Pudahuel">Pudahuel</option>
-                <option value="Puente Alto">Puente Alto</option>
-                <option value="Quilicura">Quilicura</option>
-                <option value="Quinta Normal">Quinta Normal</option>
-                <option value="Recoleta">Recoleta</option>
-                <option value="Renca">Renca</option>
-                <option value="San Bernardo">San Bernardo</option>
-                <option value="San Joaquín">San Joaquín</option>
-                <option value="San Jose de Maipo">San Jose de Maipo</option>
-                <option value="San Miguel">San Miguel</option>
-                <option value="San Ramon">San Ramon</option>
-                <option value="Santiago">Santiago</option>
-            </select>
-
-                <input type="checkbox" name="estado" value="Soltero">
-                <label style="font-family: 'Arial Narrow'">Soltero/a</label>
-                <input type="checkbox" name="estado" value="Casado">
-                <label style="font-family: 'Arial Narrow'">Casado/a</label>
-                <input type="checkbox" name="estado" value="Soltero">
-                <label style="font-family: 'Arial Narrow'">Divorciado/a</label>
-                <input type="checkbox" name="estado" value="Casado">
-                <label style="font-family: 'Arial Narrow'">Viudo/a</label><br><br>
-                <label style="font-family: 'Arial Narrow'">Fecha de Nacimiento: </label>
-                <input type="text" name="fecha"><br><br>
-                <label style="font-family: 'Arial Narrow'">Correo Electronico: </label>
-                <input type="text" name="correo">
-
-                <center>
-                    <a href="formulario.html"><img src="img/enviarr.png" width="200px"; height="100px"></a>
-                </center>      
-        </fieldset>
-
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forulario de Registro</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="" class="form">
+                <p class="form-titulo">Registrate</p>
+                <div class="form-input myname">
+                    <input  type="text" id="myname">
+                    <label for="">Nombre</label>
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input surname">
+                    <input type="text" id="surname">
+                    <label for="surname">Apellidos</label>  
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input email">
+                    <input type="mail" id="email">
+                    <label for="email">Correo electrónico</label>
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input mobile">
+                    <input type="text" id="mobile">
+                    <label for="mobile">Celular</label>  
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input password">
+                    <input type="text" id="password">
+                    <label for="password">Contraseña</label>  
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-input repeatPassword">
+                    <input type="text" id="repeatPassword">
+                    <label for="repeatPassword">Repetir Contraseña</label>  
+                    <p class="mensajeError"></p>
+                </div>
+                <input type="checkbox" id="termsAndConditions">
+                    <label for="termsAndConditions">He leído y acepto los</label>
+                    <a href="#">Términos y Condiciones</a>
+                    <p class="mensajeError"></p>
+                </div>
+                <div class="form-boton">
+                    <input type="submit" value="Enviar">
+                </div>
+                <p</p>            
+            </form>
+        </div>
+        <script> src =""</script>
+    </body>
 </html>
