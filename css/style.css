@@ -2,17 +2,14 @@
     width: 40px;
     margin-right: 10px;
 }
-
 .thumbnail-product {
     height: 150px !important;
     max-width: 150px !important;
 }
-
 .sale-real-price {
     text-decoration: line-through;
 
 }
-
 .sale-offer-price {
     color: rgb(10, 172, 10) !important;
 }
@@ -20,17 +17,33 @@
     height: 200px !important;
     max-width: 200px !important;
 }
-footer {
-    background: rgba(204, 204, 204, 0.8);
-  }
-
-  .tabla-contenedor {
+.tabla-contenedor {
     margin-left: auto;
     margin-right: auto;
     border-collapse: separate;
     border-spacing: 10px;
     
+}
+  html,
+  body {
+    height: 100%;
   }
-
-
-
+  
+  .wrapper {
+    min-height: 100%;
+    margin-bottom: 0px; 
+  }
+  
+  .footer-include {
+    height: 10px; 
+    min-height: 150px;
+    
+   bottom: 0;
+   width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+ }
