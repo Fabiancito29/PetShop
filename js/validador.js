@@ -42,6 +42,12 @@ $(document).ready(function() {
       rut: {
         required: true,
         rutChileno: true
+      },     
+       name: {
+        required: true,
+      },
+      lastname: {
+        required: true,
       },
       email: {
         required: true,
@@ -64,6 +70,12 @@ $(document).ready(function() {
       email: {
         required: "El email es un campo requerido",
         email: "El email no cumple el formato de un correo",
+      },
+      name: {
+        required: "Nombres es un campo requerido",
+      },
+      lastname: {
+        required: "Apellidos es un campo requerido",
       },
       password: {
         required: "La contraseña es una campo obligatorio",
