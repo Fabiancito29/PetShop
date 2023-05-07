@@ -1,0 +1,66 @@
+<head>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/icon.png" alt="" class="logo">
+          PetShop
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="ropa.html" data-page="ropa.html">¡Concurso!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" data-page="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html" data-page="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html" data-page="registro.html">Registrarse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ingresar.html" data-page="ingresar.html">Ingresar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div id="content">
+        <!-- Aquí se cargará el contenido dinámico -->
+      </div>
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          // Cargar el contenido de la página por defecto
+          $('#content').load('index.html');
+          
+          // Manejar el evento de clic en los enlaces del menú
+          $('a.nav-link').on('click', function(e) {
+            e.preventDefault();
+            var page = $(this).data('page');
+            
+            // Cargar el contenido de la página correspondiente usando AJAX
+            $('#content').load(page);
+          });
+        });
+      </script>
+      
+</body>
