@@ -2,163 +2,162 @@
 <html lang="es">
 
 <head>
-	<title>PetShop - Registro</title>
-	<meta charset="utf-8">
-	<meta name="description" content="Venta de productos de mascotas">
-	<meta name="author" content="Virturo Vidón">
-	<link rel="icon" href="img/icon.png">
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-	<style>
-		.error {
-		  color: red;
-		  font-weight: bolder;
-		}
-	  </style>
+    <title>PetShop - Registro</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Venta de productos de mascotas">
+    <meta name="author" content="Virturo Vidón">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error {
+          color: red;
+          font-weight: bolder;
+        }
+      </style>
 </head>
 
 <body>
-	<!-- Barra de navegación -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-		<img class="logo" src="img/icon.png" alt="">
-		<a class="navbar-brand" href="index.html">PetShop</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <img class="logo" src="img/icon.png" alt="">
+        <a class="navbar-brand" href="index.html">PetShop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
                     <a class="nav-link" href="ropa.html">¡Concurso!</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Inicio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="nosotros.html">Nosotros</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="registro.html">Registrarse</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="ingresar.html">Ingresar</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<p></p>
-	<p></p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="registro.html">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ingresar.html">Ingresar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p></p>
+    <p></p>
 
-	<!-- Formulario de registro de usuario -->
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-6">
-          <!-- Inicio form -->
-          <form method="POST" id="formulario1" action="recibir_datos">
-            <div class="form-group">
-              <br>
-				<form>
-					<h2>Registro de usuario</h2>
-					<div class="mb-3">
-						<label for="rut" class="form-label">RUT</label>
-						<input
-						type="text"
-						id="rut"
-						name="rut"
-						class="form-control"
-						placeholder="Ej 12345678-5"
-						value=""
-					  />
-					</div>
-					<div class="mb-3">
-						<label for="nombres" class="form-label">Nombres</label>
-						<input
-						type="text"
-						id="name"
-						name="name"
-						class="form-control"
-						placeholder="Ingresa tus nombres"
-						value=""
-					  />
-					</div>
-					<div class="mb-3">
-						<label for="apellidos" class="form-label">Apellidos</label>
-						<input
-						type="text"
-						id="lastname"
-						name="lastname"
-						class="form-control"
-						placeholder="Ingresa tus apellidos"
-						value=""
-					  />
-					</div>
-					<div class="mb-3">
-						<label for="correo" class="form-label">Correo electrónico</label>
-						<input
-						type="email"
-						id="email"
-						name="email"
-						class="form-control"
-						placeholder="Ingresa tu correo electrónico"
-						value=""
-					  />
-					</div>
-					<div class="mb-3">
-						<label for="direccion" class="form-label">Dirección</label>
-						<textarea class="form-control" id="descripcion" name="descripcion" placeholder="Ingresa tu dirección"></textarea>
-					</div>
-					<div class="mb-3">
-						<label for="contraseña" class="form-label">Contraseña</label>
-						<input
-						type="password"
-						id="password"
-						name="password"
-						class="form-control"
-						placeholder="Contraseña"
-						value=""
-					  />
-					</div>
-					<div class="mb-3">
-						<label for="confirmar-contraseña" class="form-label">Confirmar contraseña</label>
-						<input
-						type="password"
-						id="password2"
-						name="password2"
-						class="form-control"
-						placeholder="Repetir contraseña digitada anteriormente"
-						value=""
-					  />
-					</div>
-					<div class="mb-3">
-						<label class="form-label">Subir foto de perfil</label>
-						<input type="file" class="form-control-file" id="foto-perfil" accept="image/*">
-					</div>
-					<div class="mb-3">
-						<img src="" id="preview-foto" class="img-fluid" alt="">
-					</div>
-					<div class="mb-3 form-check">
-						<input type="checkbox" class="form-check-input" id="subscripcion">
-						<label class="form-check-label" for="subscripcion">Deseo suscribirme con un aporte de $3.000
-							mensuales y obtener un 5% de descuento en mis compras.</label>
-					</div>
-					<button type="button" class="btn btn-primary" onclick="window.location.href='index2.html'">Registrarse</button>
-					<button type="button" class="btn btn-primary" onclick="window.location.href='registro.html'">Limpiar</button>
-				</form>
-			</div>	
-		</div>
-	</div>
+    <!-- Formulario de registro de usuario -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- Inicio form -->
+                <form method="POST" id="formulario1" action="recibir_datos">
+                    <div class="form-group">
+                        <h2>Registro de usuario</h2>
+                        <div class="mb-3">
+                            <label for="rut" class="form-label">RUT</label>
+                            <input
+                            type="text"
+                            id="rut"
+                            name="rut"
+                            class="form-control"
+                            placeholder="Ej 12345678-5"
+                            value=""
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombres" class="form-label">Nombres</label>
+                            <input
+                            type="text"
+                            id="nombres"
+                            name="nombres"
+                            class="form-control"
+                            placeholder="Ingresa tus nombres"
+                            value=""
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <input
+                            type="text"
+                            id="apellidos"
+                            name="apellidos"
+                            class="form-control"
+                            placeholder="Ingresa tus apellidos"
+                            value=""
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            class="form-control"
+                            placeholder="Ingresa tu correo electrónico"
+                            value=""
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <textarea class="form-control" id="direccion" name="direccion" placeholder="Ingresa tu dirección"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            class="form-control"
+                            placeholder="Contraseña"
+                            value=""
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="password2" class="form-label">Confirmar contraseña</label>
+                            <input
+                            type="password"
+                            id="password2"
+                            name="password2"
+                            class="form-control"
+                            placeholder="Repetir contraseña digitada anteriormente"
+                            value=""
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Subir foto de perfil</label>
+                            <input type="file" class="form-control-file" id="foto-perfil" accept="image/*">
+                        </div>
+                        <div class="mb-3">
+                            <img src="" id="preview-foto" class="img-fluid" alt="">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="subscripcion">
+                            <label class="form-check-label" for="subscripcion">Deseo suscribirme con un aporte de $3.000
+                                mensuales y obtener un 5% de descuento en mis compras.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                        <button type="reset" class="btn btn-primary">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-	<script>
-		// Actualizar la imagen de vista previa al seleccionar un archivo
-		document.getElementById("foto-perfil").addEventListener("change", function (event) {
-			var imagen = document.getElementById("preview-foto");
-			imagen.src = URL.createObjectURL(event.target.files[0]);
-		});
-	</script>
-	
+    <script>
+        // Actualizar la imagen de vista previa al seleccionar un archivo
+        document.getElementById("foto-perfil").addEventListener("change", function (event) {
+            var imagen = document.getElementById("preview-foto");
+            imagen.src = URL.createObjectURL(event.target.files[0]);
+        });
+    </script>
+    
 
 
     <!-- Hacemos el llamado a los validadores, que estan en la carpeta js  -->
