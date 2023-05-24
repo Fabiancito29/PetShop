@@ -1,17 +1,13 @@
 
 $(document).ready(function () {
-    
+    $.get('https://fakestoreapi.com/products?limit=8',
 
-    $('#btn-obtener-ropas').click(function () { 
-
-        $.get('https://fakestoreapi.com/products?limit=8', 
-
-        function(data){
+        function (data) {
 
             $('.album .container #product-item').empty();
 
-            $.each(data, function(i, item) {  
-                
+            $.each(data, function (i, item) {
+
                 var elemento = '';
                 elemento += '<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">';
                 elemento += '    <div class="card mb-4 box-shadow">';
@@ -33,11 +29,8 @@ $(document).ready(function () {
                 elemento += '        </div>';
                 elemento += '    </div>';
                 elemento += '</div>';
-                $('.album .container #product-item').append(elemento);   
-            
+                $('.album .container #product-item').append(elemento);
+
             });
         });
-
-    });
-
 });
