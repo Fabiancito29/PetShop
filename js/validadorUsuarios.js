@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
 
+
   // Agregar método de validación para RUT chileno
   $.validator.addMethod("rutChileno", function(value, element) {
     // Eliminar puntos y guión del RUT
@@ -37,60 +38,59 @@ $(document).ready(function() {
     return dv === lastChar;
   }, "Por favor ingrese un RUT válido."); 
 
-$("#formulario1").validate({
+
+$("#formulario6").validate({
   rules: {
-    rut: {
-      required: true,
-      rutChileno: true
-    },     
-     nombres: {
+    id: {
       required: true,
     },
-    apellidos: {
+     rut: {
+      required: true,
+      rutChileno: true,
+    },
+    nombre: {
+      required: true,
+    },
+    direccion: {
+      required: true,
+    },
+    apellido: {
       required: true,
     },
     correo: {
       required: true,
       email: true,
     },
-    direccion: {
-      required: true,
-    },
     password: {
       required: true,
       minlength: 5,
     },
-    password2: {
-      required: true,
-      equalTo: "#password",
-    },
   }, // --> Fin de reglas
   messages: {
+    id: {
+      required: "El ID es un campo obligatorio",
+    },
     rut: {
       required: "El rut es un campo obligatorio",
-      rutChileno: "El formato del rut no es válido"
+      rutChileno: "El formato del rut es inválido",
     },
-    nombres: {
-      required: "Nombres es un campo obligatorio",
-    },
-    apellidos: {
-      required: "Apellidos es un campo obligatorio",
-    },
-    correo: {
-      required: "El correo es un campo obligatorio",
-      email: "El formato del correo no es válido",
+    nombre: {
+      required: "Nombre es un campo obligatorio",
     },
     direccion: {
       required: "La dirección es un campo obligatorio",
     },
+    apellido: {
+      required: "El apellido es un campo obligatorio",
+    },
+    correo: {
+      required: "El correo es un campo obligatorio",
+      email: "El formato del correo no es válido"
+    },
     password: {
       required: "La contraseña es un campo obligatorio",
       minlength: "Mínimo 5 caracteres",
-    },
-    password2: {
-      required: "Repita la contraseña anterior",
-      equalTo: "Debe ser igual al campo contraseña anterior",
-    },
+    }
   },
 });
 });

@@ -37,7 +37,7 @@ $(document).ready(function() {
     return dv === lastChar;
   }, "Por favor ingrese un RUT válido."); 
 
-$("#formulario1").validate({
+$("#formulario2").validate({
   rules: {
     rut: {
       required: true,
