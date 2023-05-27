@@ -21,39 +21,10 @@
 </head>
 
 <body>
-  <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <img class="logo" src="img/icon.png" alt="">
-    <a class="navbar-brand" href="indexA.html">PetShop</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="ropaA.html">¡Concurso!</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="indexA.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nosotrosA.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="misDatosA.html">Mis datos</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="administracion.html">Administrar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="cerrarSesionA.html">Cerrar sesión</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <!--Menú-->
+  <div id="menu-superior"></div> 
 
-
+  <!--Mantenedor de productos-->
   <div class="container">
     <h1 class="text-center my-4">Mantenedor de Productos</h1>
     <form method="POST" id="formulario4" action="recibir_datos">
@@ -69,7 +40,7 @@
           value=""
           />
         </div>
-        <label for="categoria" class="col-sm-2 col-form-label">Categoría:</label>
+        <lab  |el for="categoria" class="col-sm-2 col-form-label">Categoría:</label>
         <div class="col-sm-4">
           <select class="form-control" id="categoria" name="categoria">
             <option value="Perros">Perros</option>
@@ -239,5 +210,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
       <script src="js/validadorProductos.js" type="text/javascript"></script>
-  
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/menu-superior.js" ></script> 
 </body>
+</html>
