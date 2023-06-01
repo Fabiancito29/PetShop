@@ -32,94 +32,41 @@
     }
   </style>
 </head>
-
+ 
 <body>
-  <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <img class="logo" src="img/icon.png" alt="">
-    <a class="navbar-brand" href="indexA.html">PetShop</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="ropaA.html">¡Concurso!</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="indexA.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nosotrosA.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="misDatosA.html">Mis datos</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="administracion.html">Administrar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="cerrarSesionA.html">Cerrar sesión</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+  <!--Menú-->
+  <div id="menu-superior"></div>
+  <!--Bodega-->
   <div class="container">
     <h1 class="text-center mb-4">Mantenedor de Bodega</h1>
     <form method="POST" id="formulario5" action="recibir_datos">
-    <div class="form-group">
-      <label for="categoria">Categoría:</label>
-      <select class="form-control" id="categoria">
-        <option value="perro">Perro</option>
-        <option value="gato">Gato</option>
-        <option value="pato">Pato</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="nombre">Nombre:</label>
-      <input 
-      type="text" 
-      class="form-control" 
-      id="nombre"
-      name="nombre"
-      placeholder="Ingrese su nombre"
-      value=""
-      />
-    </div>
-    <div class="form-group">
-      <label for="cantidad">Cantidad:</label>
-      <input 
-      type="text" 
-      class="form-control" 
-      id="cantidad"
-      name="cantidad" 
-      placeholder="Ej 1"
-      value=""
-      />
-    </div>
-    <div class="form-group">
-      <label for="imagen">Imagen:</label>
-      <input type="file" class="form-control-file" id="imagen">
-    </div>
-    <button type="submit" class="btn btn-primary btn-block mb-3">Agregar</button>
-    <button type="button" class="btn btn-secondary btn-block">Nuevo</button>
+      <div class="form-group">
+        <label for="categoria">Categoría:</label>
+        <select class="form-control" id="categoria">
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+          <option value="pato">Pato</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <select class="form-control" id="categoria">
+          <option value="perro">Comida de perro</option>
+          <option value="gato">Comida de gato</option>
+          <option value="pato">Comida de pato</option>
+        </select>
+      <div class="form-group">
+        <label for="cantidad">Cantidad:</label>
+        <input type="text" class="form-control" id="cantidad" name="cantidad" placeholder="Ej 1" value="" />
+      </div>
+      <div class="form-group">
+        <label for="imagen">Imagen:</label>
+        <input type="file" class="form-control-file" id="imagen">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block mb-3">Agregar</button>
+      <button type="button" class="btn btn-secondary btn-block">Nuevo</button>
   </div>
-
-  <!-- jQuery y Popper.js -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/XwpSbdEJg1wMIdf"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-
+  <!--BDD-->
   <div class="container">
     <table class="table table-striped mx-auto">
       <thead>
@@ -163,4 +110,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
   <script src="js/validadorBodega.js" type="text/javascript"></script>
+  <!-- jQuery y Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/XwpSbdEJg1wMIdf"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="js/menu-superior.js"></script>
 </body>
+
+</html>
