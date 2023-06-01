@@ -32,7 +32,7 @@
     }
   </style>
 </head>
- 
+
 <body>
   <!--Menú-->
   <div id="menu-superior"></div>
@@ -55,14 +55,55 @@
           <option value="gato">Comida de gato</option>
           <option value="pato">Comida de pato</option>
         </select>
-      <div class="form-group">
-        <label for="cantidad">Cantidad:</label>
-        <input type="text" class="form-control" id="cantidad" name="cantidad" placeholder="Ej 1" value="" />
+        <div class="form-group">
+          <label for="cantidad">Cantidad:</label>
+          <input type="text" class="form-control" id="cantidad" name="cantidad" placeholder="Ej 1" value="" />
+        </div>
+        <div class="form-group">
+          <label for="imagen">Imagen:</label>
+          <input type="file" class="form-control-file" id="imagen">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mb-3">Agregar</button>
+        <button type="button" class="btn btn-secondary btn-block">Nuevo</button>
       </div>
-      <div class="form-group">
-        <label for="imagen">Imagen:</label>
-        <input type="file" class="form-control-file" id="imagen">
+      <!--BDD-->
+      <div class="container">
+        <table class="table table-striped mx-auto">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Categoría</th>
+              <th>Nombre</th>
+              <th>Estado</th>
+              <th>Opciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Perro</td>
+              <td>MasterDog 15kg Adulto HP</td>
+              <td>Disponible</td>
+              <td><button class="btn btn-danger">Eliminar</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Gato</td>
+              <td>CatChow Churu 100g</td>
+              <td>En bodega</td>
+              <td><button class="btn btn-danger">Eliminar</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Pato</td>
+              <td>Pelota de futbol para patos</td>
+              <td>Agotado</td>
+              <td><button class="btn btn-danger">Eliminar</button></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+<<<<<<< HEAD
       <button type="submit" class="btn btn-primary btn-block mb-3">Agregar</button>
       <button type="button" class="btn btn-secondary btn-block">Nuevo</button>
   </div>
@@ -124,6 +165,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
   <script src="js/validadorBodega.js" type="text/javascript"></script>
+=======
+      <!-- Bootstrap JS -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="js/menu-superior.js"></script>
+      <script src="js/validadorBodega.js" type="text/javascript"></script>
+>>>>>>> b5d87a78c3217b2778c94ea7d72755041999c0e1
 </body>
-
 </html>
